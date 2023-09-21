@@ -13,11 +13,6 @@ const nextBtn = document.getElementById('next');
 // Music
 const songs = [  
   {
-    name: 'hate',
-    displayName: 'Hate',
-    artist: 'ThxSoMch',
-  },
-  {
     name: 'interworld',
     displayName: 'Metamorphosis',
     artist: 'Interworld',
@@ -27,11 +22,11 @@ const songs = [
     displayName: 'Lost Soul',
     artist: 'NBSPLV',
   },
-  // {
-  //   name: 'tenseoh',
-  //   displayName: 'Heartburn',
-  //   artist: 'Tenseoh',
-  // },
+  {
+    name: 'WEEDMANE',
+    displayName: 'Suicide Year',
+    artist: 'WEEDMANE',
+  },
   {
     name: 'VØJ, Narvent',
     displayName: 'Memory Reboot',

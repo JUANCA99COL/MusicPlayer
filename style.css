@@ -1,6 +1,5 @@
-/* Images created by: https://unsplash.com/@pawel_czerwinski */
-
 @import url("https://fonts.googleapis.com/css?family=Spartan:400,700&display=swap");
+
 
 html {
   box-sizing: border-box;
@@ -17,10 +16,10 @@ body {
   align-items: center;
   font-family: Spartan, sans-serif;
   font-size: 12px;
-  background-image: url("../img/banner.jpeg");
+  /* background-image: url("../img/banner.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center center; */
   color: white;
 }
 
