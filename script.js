@@ -20,7 +20,7 @@ const songs = [
   {
     name: 'interworld',
     displayName: 'Metamorphosis',
-    artist: 'interworld',
+    artist: 'Interworld',
   },
   {
     name: 'NBSPLV',
@@ -28,7 +28,7 @@ const songs = [
     artist: 'NBSPLV',
   },
   {
-    name: 'Tenseoh',
+    name: 'tenseoh',
     displayName: 'Heartburn',
     artist: 'Tenseoh',
   },
