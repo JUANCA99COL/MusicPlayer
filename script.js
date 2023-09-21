@@ -27,11 +27,11 @@ const songs = [
     displayName: 'Lost Soul',
     artist: 'NBSPLV',
   },
-  {
-    name: 'tenseoh',
-    displayName: 'Heartburn',
-    artist: 'Tenseoh',
-  },
+  // {
+  //   name: 'tenseoh',
+  //   displayName: 'Heartburn',
+  //   artist: 'Tenseoh',
+  // },
   {
     name: 'VØJ, Narvent',
     displayName: 'Memory Reboot',
