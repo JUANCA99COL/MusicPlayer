@@ -23,7 +23,7 @@ const songs = [
     artist: 'NBSPLV',
   },
   {
-    name: 'WEEDMANE',
+    name: 'weedmane',
     displayName: 'Suicide Year',
     artist: 'WEEDMANE',
   },
