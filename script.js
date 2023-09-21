@@ -23,9 +23,9 @@ const songs = [
     artist: 'NBSPLV',
   },
   {
-    name: 'weedmane',
-    displayName: 'Suicide Year',
-    artist: 'WEEDMANE',
+    name: 'empty',
+    displayName: 'Not Even Ghosts',
+    artist: '$uicideboy$',
   },
   {
     name: 'VØJ, Narvent',
