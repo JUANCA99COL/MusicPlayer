@@ -16,10 +16,6 @@ body {
   align-items: center;
   font-family: Spartan, sans-serif;
   font-size: 12px;
-  /* background-image: url("../img/banner.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center; */
   color: white;
 }
 
@@ -103,7 +99,7 @@ h3 {
 }
 
 .fas:hover {
-  filter: brightness(80%);
+  color: #a846f2;
 }
 
 .main-button {

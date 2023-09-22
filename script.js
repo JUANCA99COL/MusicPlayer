@@ -23,14 +23,49 @@ const songs = [
     artist: 'NBSPLV',
   },
   {
-    name: 'empty',
-    displayName: 'Not Even Ghosts',
-    artist: '$uicideboy$',
-  },
-  {
     name: 'VØJ, Narvent',
     displayName: 'Memory Reboot',
     artist: 'VØJ, Narvent',
+  },
+  {
+    name: 'dark',
+    displayName: 'After Dark',
+    artist: 'Mr.Kitty',
+  },
+  {
+    name: 'angel',
+    displayName: '0% Angel',
+    artist: 'Mr.Kitty',
+  },
+  {
+    name: 'home',
+    displayName: 'Home',
+    artist: 'Resonance',
+  },
+  {
+    name: 'lemonade',
+    displayName: 'Lemonade',
+    artist: 'Bumboi',
+  },
+  {
+    name: 'rock',
+    displayName: 'Rock With You Pt.2',
+    artist: 'Lil God Dam',
+  },
+  {
+    name: 'faceless',
+    displayName: 'Faceless',
+    artist: 'WesGhost',
+  },
+  {
+    name: 'cursed',
+    displayName: 'Cursed',
+    artist: 'WesGhost',
+  },
+  {
+    name: 'ecstacy',
+    displayName: 'ecstacy',
+    artist: 'SUICIDAL-IDOL',
   },
 ];
 
