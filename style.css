@@ -632,8 +632,8 @@ img {
 }
 
 .player.expanded .art-wrap {
-  width: 100%;
-  /* margin-top: -70px; */
+  width: 70%;
+  margin-top: -50px;
   max-width: 320px;
   height: auto;
   aspect-ratio: 1 / 1;
@@ -814,7 +814,9 @@ img {
   }
 
   .player.expanded .art-wrap {
+    width: 100%;
     max-width: 240px;
+    margin-top: -30px;
   }
 
   .player.expanded .transport {
