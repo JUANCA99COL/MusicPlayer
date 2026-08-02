@@ -3,35 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Player</title>
+    <title>MPL — Music Player</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="player-container">
-        <!-- our song properties -->
-        <div class="img-container">
-            <img src="img/interworld.jpg" alt="Album Art">
-        </div>
-        <h2 id="title">Metamorphosis</h2>
-        <h3 id="artist">Interworld</h3>
-        <audio src="music/interworld.mp3"></audio>
-         <!-- Progress -->
-         <div class="progress-container" id="progress-container">
-            <div class="progress" id="progress"></div>
-            <div class="duration-wrapper">
-                <span id="current-time">0:00</span>
-                <span id="duration">2:06</span>
+    <div class="app">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-top">
+                <div class="brand">
+                    <span class="brand-mark"><i class="fas fa-headphones-alt"></i></span>
+                    <span class="brand-name">MPL</span>
+                </div>
+                <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="artist-menu" aria-label="Open artist menu">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
-        </div>
-        <!-- Controls -->
-        <div class="player-controls">
-            <i class="fas fa-backward" id="prev" title="Previous"></i>
-            <i class="fas fa-play main-button" id="play" title="Play"></i>
-            <i class="fas fa-forward" id="next" title="Next"></i>
-        </div>
+
+            <div class="sidebar-section" id="artist-menu">
+                <h2 class="sidebar-label">Filter by artist</h2>
+                <div class="chip-row" id="artist-chips">
+                    <button class="chip active" data-artist="all" type="button">All</button>
+                </div>
+            </div>
+
+            <p class="sidebar-footer"><span id="song-count">0</span> tracks in your library</p>
+        </aside>
+
+        <main class="main">
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">Library</p>
+                    <h1>Your Songs</h1>
+                </div>
+                <label class="search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" placeholder="Search songs or artists" autocomplete="off">
+                </label>
+            </header>
+
+            <div class="library-scroll">
+                <section class="song-list" id="song-list" aria-label="Song list"></section>
+                <p class="empty-state" id="empty-state" hidden>No songs match your search.</p>
+            </div>
+        </main>
+
+        <footer class="player" id="player">
+            <button class="player-expand" id="expand-toggle" type="button" title="Expand player" aria-label="Expand player">
+                <i class="fas fa-chevron-up"></i>
+            </button>
+
+            <div class="player-inner">
+                <div class="now-playing" id="now-playing">
+                    <div class="art-wrap">
+                        <img id="art" src="" alt="Album art">
+                    </div>
+                    <div class="track-meta">
+                        <h2 id="title"></h2>
+                        <p id="artist"></p>
+                    </div>
+                    <button class="icon-btn like-btn" id="like-btn" type="button" title="Like" aria-label="Like song">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+
+                <div class="player-main">
+                    <div class="transport">
+                        <button class="icon-btn" id="shuffle" type="button" title="Shuffle" aria-label="Shuffle"><i class="fas fa-random"></i></button>
+                        <button class="icon-btn" id="prev" type="button" title="Previous" aria-label="Previous"><i class="fas fa-step-backward"></i></button>
+                        <button class="icon-btn main-button" id="play" type="button" title="Play" aria-label="Play"><i class="fas fa-play"></i></button>
+                        <button class="icon-btn" id="next" type="button" title="Next" aria-label="Next"><i class="fas fa-step-forward"></i></button>
+                        <button class="icon-btn" id="repeat" type="button" title="Repeat" aria-label="Repeat"><i class="fas fa-redo-alt"></i></button>
+                    </div>
+                    <div class="progress-row">
+                        <span id="current-time">0:00</span>
+                        <div class="progress-container" id="progress-container">
+                            <div class="progress" id="progress"></div>
+                        </div>
+                        <span id="duration">0:00</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-    <!-- Script -->
+
+    <audio id="audio"></audio>
     <script src="script.js"></script>
 </body>
 </html>
